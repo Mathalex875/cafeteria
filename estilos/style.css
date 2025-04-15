@@ -92,7 +92,7 @@ header .texto h3{
     left: 0;
     top: -50px;
     z-index: 0;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
 .main .acerca-de .foto img{
@@ -108,7 +108,7 @@ header .texto h3{
     top: 50px;
     z-index: 1;
     float: right;
-    box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
 .main .acerca-de article h3{
@@ -121,7 +121,7 @@ header .texto h3{
     line-height: 20px;
     margin-bottom: 15px;
 }
-/*cSS2*/
+/* seccion menú*/
 .main .menu{
     padding-top: 630px;
     margin-bottom: 50px;
@@ -140,11 +140,12 @@ header .texto h3{
     background: #739da2c6;
     padding: 10px;
     overflow: hidden;
-    box-shadow: 15px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 15px 0px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
-.main .menu .article{
+.main .menu article{
     width: 50%;
+    /*background-color: #18a08c;*/
     float: left;
     padding: 20px;
 }
@@ -164,7 +165,7 @@ header .texto h3{
 }
 
 .main .menu .nombre{
-    font-size: 20px;
+    font-size:20px;
     margin-bottom: 15px;
     float: left;
 }
@@ -181,6 +182,7 @@ header .texto h3{
     clear: both;
 }
 
+/*Estilos a la sección galeria*/
 .main .galeria{
     overflow: hidden;
 }
@@ -194,19 +196,23 @@ header .texto h3{
     width: 100%;
     vertical-align: top;
     opacity: 0.7;
+    
 }
 
 .main .galeria .foto img:hover{
     opacity: 1;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    
+    -webkit-transition: all 0.3s ease;
+    -o-transition:all .3s ease;
+    transition: all 0.3s ease;
+
 }
 
-/*-----Ubicacion------*/
-.main .ubicacion{
+/*-------Ubicación--------*/
+
+.mian .ubicacion{
     background: #fff;
-    padding: 60px 0;
+    padding: 60px;
     overflow: hidden;
 }
 
@@ -215,8 +221,7 @@ header .texto h3{
     font-size: 40px;
     line-height: 40px;
     font-weight: 300;
-    margin-bottom: 40px;
-
+   margin-bottom: 40px;
 }
 
 .main .ubicacion .direccion{
@@ -258,6 +263,7 @@ header .texto h3{
     width: 100%;
     max-height: 600px;
 }
+
 /*-------footer--------*/
 footer{
     background: #000;
@@ -269,6 +275,7 @@ footer .copyright{
     color: #fff;
 }
 
+/*-----------MEDIA QUERIES-----------*/
 @media screen and (max-width: 800px){
     header .contenedor{
         position: static;
